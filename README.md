@@ -147,6 +147,5 @@ cell-segmentation/
 ---
 
 ## 📬 Contact
+Made by rosegostner
 
-Made by **[Your Name]** — feel free to reach out on
-[LinkedIn](https://linkedin.com/in/YOURPROFILE)!
