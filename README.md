@@ -14,6 +14,13 @@ Built as a portfolio project targeting biotech/pharma computer vision roles.
 
 ---
 
+## Architecture
+
+![Architecture diagram: microscopy image to cell segmentation](docs/architecture.svg)
+
+The dashed classifier branch is a potential extension and is not implemented in the current app.
+
+
 ## 🧬 Dataset
 
 [LIVECell](https://github.com/sartorius-research/LIVECell) — a large-scale

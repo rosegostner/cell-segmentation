@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">Microscopy image processing architecture</title>
+  <desc id="desc">A microscopy image passes through preprocessing and a pretrained Cellpose model to produce an instance mask, cell count, and overlay. Classification is shown as a possible future extension.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0054A6"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #333333; }
+      .heading { font-size: 23px; font-weight: bold; }
+      .label { font-size: 17px; font-weight: bold; }
+      .detail { font-size: 13px; }
+      .note { font-size: 13px; }
+      .box { fill: #FFFFFF; stroke: #0054A6; stroke-width: 2; rx: 12; }
+      .soft { fill: #F5F5F5; }
+      .optional { fill: #F5F5F5; stroke: #777777; stroke-width: 2; stroke-dasharray: 7 5; rx: 12; }
+      .arrow { fill: none; stroke: #0054A6; stroke-width: 2.5; marker-end: url(#arrow); }
+      .dashed-arrow { fill: none; stroke: #777777; stroke-width: 2; stroke-dasharray: 7 5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1120" height="470" fill="#FFFFFF"/>
+  <text x="40" y="47" class="heading">From Microscopy Image to Cell Segmentation</text>
+
+  <rect x="35" y="105" width="175" height="116" class="box"/>
+  <text x="122" y="143" class="label" text-anchor="middle">Microscopy image</text>
+  <text x="122" y="169" class="detail" text-anchor="middle">LIVECell demo or</text>
+  <text x="122" y="189" class="detail" text-anchor="middle">user upload</text>
+
+  <path d="M210 163 H253" class="arrow"/>
+
+  <rect x="255" y="105" width="175" height="116" class="box soft"/>
+  <text x="342" y="143" class="label" text-anchor="middle">Preprocessing</text>
+  <text x="342" y="169" class="detail" text-anchor="middle">Load image</text>
+  <text x="342" y="189" class="detail" text-anchor="middle">Resize to 512 × 512</text>
+
+  <path d="M430 163 H473" class="arrow"/>
+
+  <rect x="475" y="105" width="202" height="116" class="box"/>
+  <text x="576" y="140" class="label" text-anchor="middle">Cellpose model</text>
+  <text x="576" y="166" class="detail" text-anchor="middle">Pretrained model</text>
+  <text x="576" y="186" class="detail" text-anchor="middle">for segmentation</text>
+
+  <path d="M677 163 H720" class="arrow"/>
+
+  <rect x="722" y="105" width="175" height="116" class="box soft"/>
+  <text x="809" y="143" class="label" text-anchor="middle">Instance mask</text>
+  <text x="809" y="169" class="detail" text-anchor="middle">Separate ID for</text>
+  <text x="809" y="189" class="detail" text-anchor="middle">each detected cell</text>
+
+  <path d="M897 163 H940" class="arrow"/>
+
+  <rect x="942" y="105" width="145" height="116" class="box"/>
+  <text x="1014" y="143" class="label" text-anchor="middle">Outputs</text>
+  <text x="1014" y="169" class="detail" text-anchor="middle">Mask · Overlay</text>
+  <text x="1014" y="189" class="detail" text-anchor="middle">Cell count</text>
+
+  <path d="M809 221 V286 H640 V315" class="dashed-arrow"/>
+  <rect x="526" y="318" width="228" height="91" class="optional"/>
+  <text x="640" y="350" class="label" text-anchor="middle">Classifier</text>
+  <text x="640" y="375" class="detail" text-anchor="middle">e.g., identify cell types</text>
+  <text x="640" y="395" class="detail" text-anchor="middle">Not implemented</text>
+
+  <text x="40" y="449" class="note">Solid arrows: current workflow · Dashed arrow: possible future extension</text>
+</svg>
