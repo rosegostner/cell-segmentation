@@ -36,14 +36,14 @@ uv run python download_data.py
 
 > ⚠️ Full dataset is ~500MB and is not included in this repo.
 
-## Data attribution
+### Data attribution and license
 
-The sample microscopy image is from the LIVECell dataset by Sartorius.
-LIVECell data assets are licensed under
-[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
-The image is included for demonstration; no changes were made to the
-original image.
----
+The sample microscopy image comes from the LIVECell dataset by Sartorius. LIVECell data assets are licensed under [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
+The sample image is included for demonstration. It has not been modified.
+
+**Note:** The CC BY-NC 4.0 license permits non-commercial use; it does not grant unrestricted commercial use. Check whether your intended use meets the license terms before reusing or redistributing the image.
+
 
 ## 🏆 Results
 
